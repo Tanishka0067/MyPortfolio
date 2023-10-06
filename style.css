@@ -451,4 +451,19 @@ input[type="submit"]{
  input[type="submit"]:hover{
     background-color: #005437; 
  }
- @media
+ footer{
+    background-color: black;
+    color: white;
+   
+ }
+ .footer-elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .foot-r{
+    display: flex;
+    flex-direction: row;
+gap: 10px;
+ }
