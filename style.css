@@ -208,6 +208,7 @@ img{
 .skills{
     background-color: rgb(26, 26, 26);
     padding: 50px;
+   padding-bottom: 60px;
 }
 .skills h5{
     font-size: 1.1em;
@@ -308,6 +309,69 @@ img{
     background-color: #0fdf96;
 } */
 .contact{
+    background-color: rgba(32, 33, 32, 0.881);
+    padding: 50px;
+}
+.contact h5{
+    font-size: 1.1em;
+    font-weight: 110;
+    color: #0fdf96;
+    padding: 10px;
+    padding-left: 0;
+}
+.contact h2{
+    font-size: 2.8em;
+
+    
+}
+.contact h2 span{
+    color: #0fdf96;
+}
+.contact p{
+    font-family: sans-serif;
+    word-spacing: 0.2em;
+    text-wrap: wrap;
+    line-height: 1.5em;
+    width: 50%;
+    position: relative;
+    top: 15px;
+    justify-content: right ;
+}
+.connect{
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 150px 150px;
+  gap: 20px;
+  padding-bottom: 50px;
+overflow: hidden;
+}
+.contact-element{
+    background: white ;
+  
+    transition: transform .2s ease-in;
+    box-shadow: 6px 6px 6px rgba(39, 38, 38, 0.7);
+    padding: 30px;
+    text-align: center;
+    
+}
+.contact-element i {
+    padding: 15px;
+    font-size: 3em;
+}
+.contact-element h1{
+    color: #0fdf96;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.contact-element:hover{ 
+    transform: scale(1.1);
+    
+}
+.feedback{
     background-color: rgb(26, 26, 26);
     padding: 50px;
+   padding-bottom: 60px;
 }
