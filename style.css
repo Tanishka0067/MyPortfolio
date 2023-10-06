@@ -109,6 +109,7 @@ list-style-type: none;
    
 }
 .name{
+    position: relative;
     justify-content: center;
     align-items: center;
     /* margin: auto; */
@@ -467,3 +468,33 @@ input[type="submit"]{
     flex-direction: row;
 gap: 10px;
  }
+ /* @media (max-width:1999px){
+    .intro{
+        background-size: contain;  
+      }
+     
+ } */
+
+ @media(max-width:800px){
+    /* .name{padding: 10px;
+    position:relative;
+top: 20px;}
+    .name h1{
+        font-size: 1.5em;
+    }
+    .name h5{
+        font-size: 1.5 em; */
+    
+    .projects{
+        display: flex;
+        flex-direction: row;
+        overflow:scroll;
+       margin: auto;
+    }
+    .connect{
+        display: flex;
+        flex-direction: row;
+       overflow:scroll;
+      margin: auto;
+      }
+    }
