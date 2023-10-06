@@ -217,10 +217,7 @@ img{
     padding: 10px;
     padding-left: 0;
 }
-.skills h2{
-    font-size: 2.8em;
-
-    
+.skills h2{font-size: 2.8em; 
 }
 .skills h2 span{
     color: #0fdf96;
@@ -308,8 +305,51 @@ img{
     margi-right: 0; 
     background-color: #0fdf96;
 } */
-.contact{
+.portfolio{
     background-color: rgba(32, 33, 32, 0.881);
+    background: linear-gradient(black,rgba(32, 33, 32, 0.881));
+    padding: 50px;
+    padding-bottom: 60px;
+}
+.portfolio h5{
+    font-size: 1.1em;
+    font-weight: 110;
+    color: #0fdf96;
+    padding: 10px;
+    padding-left: 0;
+}
+.portfolio h2{font-size: 2.8em; 
+}
+.portfolio h2 span{
+    color: #0fdf96;
+}
+.projects{
+position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-columns: 300px 300px ;
+    grid-template-rows: 200px 200px;
+  gap: 5px;
+justify-content: center;
+
+  padding-bottom: 50px;
+}
+.portfolio img{
+    height: 200px;
+    width: 300px;
+    transition: transform .2s ease-in;
+    
+}
+.portfolio img:hover{
+    transform: scale(1.1);
+}
+.project-pic{
+    margin: 10px;
+    overflow: hidden;
+   
+}
+.contact{
+    background-color: rgb(26, 26, 26);
     padding: 50px;
 }
 .contact h5{
@@ -374,4 +414,41 @@ overflow: hidden;
     background-color: rgb(26, 26, 26);
     padding: 50px;
    padding-bottom: 60px;
+   text-align: center;
+   
 }
+.feedback h1{
+    font-size: 2.8em;
+    padding: 30px;
+}
+.feedback fieldset{
+    font-size: 1.1em;
+    font-family: poppins;
+    padding: 15px;
+    text-align: left;
+    margin: 30px;
+    border-radius: 8px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="message"],
+textarea{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    margin: auto;
+    background: transparent;
+}
+input[type="submit"]{
+    background-color: #0fdf96;
+    color: #fff;
+    border: none;
+   padding: 15px;
+   cursor: pointer;
+   width: 50%;
+ }
+ input[type="submit"]:hover{
+    background-color: #005437; 
+ }
+ @media
