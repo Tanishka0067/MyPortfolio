@@ -26,8 +26,9 @@
           <li class="ham-menu">
             <nav role="navigation">
               <div id="menuToggle">
-                <input type="checkbox" />
-                <i class="fa-solid fa-bars fa-2xl"></i>
+                <input type="checkbox" id="cb" />
+                <!-- <i class="fa-solid fa-xmark cross"></i> -->
+                <i class="fa-solid fa-bars fa-2xl hamburger-icon"></i>
                 <ul id="menu">
                   <a href="#intro"><li>Home</li></a>
                   <a href="#about"><li>About</li></a>
@@ -48,9 +49,9 @@
       </div>
     </div>
     <!-- hero section -->
-    <section id="intro" class="intro">
+    <section id="intro" class="intro" tabindex="1">
       <div class="name">
-        <h4>Hello,I am</h4>
+        <h4>Hello, I am</h4>
         <h1>Tanishka Agarwal</h1>
         <h4>
           I am a frontend developer. Turning ideas into reality is my calling.
@@ -58,6 +59,9 @@
         <a href="#contact">
           <button type="button" class="button2">Get In Touch</button></a
         >
+      </div>
+      <div class="profile-image">
+        <!-- <img src="images/desktop.jpg" alt="Profile" /> -->
       </div>
     </section>
     <!-- About section -->
@@ -149,12 +153,11 @@
         <div class="skill-element">
           <div class="card">
             <i class="fa-solid fa-user-pen fa-2xl"></i>
-            <h2>Communication and Documentation</h2>
+            <h2>Communication</h2>
             <h5>
-              Ability to clearly articulate technical concepts, project goals,
-              and your role in team projects. Documentation skills by including
-              clear project descriptions, explanations of your development
-              process, and any technical documentation.
+              Effective communication of technical concepts, project goals, and
+              team roles. Strong documentation skills, including project
+              descriptions, development processes, and technical documentation.
 
               <!-- <input type="checkbox" class="read-more-checkbox" id="read-more-toggle"> <label for="read-more-toggle" class="read-more-label">Read More</label> -->
             </h5>
@@ -254,37 +257,42 @@
     </section>
     <section class="feedback" id="feedback">
       <h1>Share your Feedback</h1>
-      <form action="mailto:#email" method="post">
+      <form action="mailto:tanishka22164068@akgec.ac.in" method="post">
         <fieldset>
-          <legend>NAME*:</legend>
-          <input type="text" name="name" placeholder="name here" required />
+          <legend>NAME*</legend>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Your Name"
+            required
+          />
         </fieldset>
         <fieldset class="paddingtrial">
-          <legend>Gender</legend>
+          <legend>Gender*</legend>
           Male <input type="radio" name="gender" id="Male" /> Female
           <input type="radio" name="gender" id="feMale" />
         </fieldset>
         <fieldset>
-          <legend>Phone No.*</legend>
+          <legend>Phone No*</legend>
           <input
             type="number"
             name="phone-no"
-            placeholder="Phone Number here"
+            placeholder="Enter Phone Number"
             required
           />
         </fieldset>
         <fieldset>
-          <legend>E-mail*:</legend>
+          <legend>Mail*</legend>
           <input
             type="email"
-            placeholder="email here"
+            placeholder="Enter Your Email"
             name="email"
             id="email"
             required
           />
         </fieldset>
         <fieldset>
-          <legend>Message*:</legend>
+          <legend>Message*</legend>
           <textarea id="message" name="message" rows="10" cols="187">
           </textarea>
         </fieldset>

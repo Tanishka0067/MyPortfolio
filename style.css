@@ -12,14 +12,14 @@ a{
 .navbar{
     background-color: rgb(52, 51, 51);
     color: rgba(255, 255, 255, 0.901);
-    height: 40px;
+    height: 60px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-
+    padding: 8px;
 }
 i{color: #0fdf96;}
  .nav-element{
@@ -31,6 +31,12 @@ i{color: #0fdf96;}
 list-style-type: none;    
 }
 /* hamburger-menu */
+.hamburger-icon{
+    /* top: 4.5%;
+    left: 2.5%; */
+    position: relative;
+    z-index: 4;
+}
 #menuToggle{
     /* display: block;
     position: relative;
@@ -55,10 +61,20 @@ list-style-type: none;
   
   /* -webkit-touch-callout: none; */
 }
+#cb{
+    position: relative;
+    z-index: 6;
+}
+
 #menuToggle input:checked ~ i{
     opacity: 1;
     background: #232323;
     transform: rotate(90deg) translate(-2px, -1px);
+    z-index: 3;
+    position: absolute;
+}
+.cross{
+
 }
 #menu{
     position: absolute;
@@ -88,15 +104,16 @@ list-style-type: none;
     background: transparent;
     font-family: 'Poppins', sans-serif;
     outline: none;
-    border: 2px solid #0fdf96;
+    border: 3px solid #0fdf96;
     border-radius: 20px;
-    padding: 5px;
+    padding: 10px;
     margin-right: 25px;
     cursor: pointer;
+    font-weight:bolder;
 }
 /* hero-section */
-.intro{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.608) , rgba(255, 255, 255, 0.196)), url(images/WhatsApp\ Image\ 2023-10-05\ at\ 10.45.41\ PM.jpeg);
+/* .intro{
+    background-image: linear-gradient(to right, rgba(0, 0, 0,1) , rgba(255, 255, 255, 0.196)), url("images/illustration.avif");
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -107,7 +124,20 @@ list-style-type: none;
     align-items: center;
     justify-content: flex-start;
    
+} */
+.intro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    padding: 7rem;
 }
+
+.intro:focus + #menu{
+    display: none;
+}
+
 .name{
     position: relative;
     justify-content: center;
@@ -115,7 +145,7 @@ list-style-type: none;
     /* margin: auto; */
     width: 60%;
     flex-wrap: wrap;
-    text-align: left;
+    /* text-align: left; */
     padding: 50px;
 }
 .intro h1{
@@ -152,7 +182,7 @@ list-style-type: none;
   
    
 }
-img{
+.about img{
     height: 350px;
     background:linear-gradient(rgb(26, 27, 26), rgb(11, 71, 37)); ;
     
@@ -440,7 +470,9 @@ textarea{
     color: white;
     margin: auto;
     background: transparent;
+    border: none;
 }
+
 input[type="submit"]{
     background-color: #0fdf96;
     color: #fff;
@@ -455,7 +487,7 @@ input[type="submit"]{
  footer{
     background-color: black;
     color: white;
-   
+   padding: 20px;
  }
  .footer-elements{
     display: flex;
@@ -466,7 +498,8 @@ input[type="submit"]{
  .foot-r{
     display: flex;
     flex-direction: row;
-gap: 10px;
+   
+gap: 20px;
  }
  /* @media (max-width:1999px){
     .intro{
