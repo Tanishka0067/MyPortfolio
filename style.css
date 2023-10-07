@@ -5,6 +5,7 @@
     scroll-behavior: smooth;
     color: white;
 }
+
 a{
     cursor: pointer;
 }
@@ -20,6 +21,7 @@ a{
     align-items: center;
     font-family: 'Poppins', sans-serif;
     padding: 8px;
+    
 }
 i{color: #0fdf96;}
  .nav-element{
@@ -271,6 +273,7 @@ list-style-type: none;
     height: 300px;
     margin-left: 0;
     gap: 20px;
+    /* flex-wrap: wrap; */
     /* background-color: rgb(42, 47, 44); 
     border:3px solid rgb(31, 32, 32); */
 }
@@ -280,7 +283,7 @@ list-style-type: none;
     background-color: rgb(47, 48, 48); 
     border:3px solid rgb(47, 48, 48);
     width: 300px;
-    transition: transform .2s ease-in;
+    transition: transform .4s ease-in;
     border-bottom: 5px solid #0fdf96;
    overflow: auto;
     /* box-shadow: 3px 3px 8px rgba(59, 60, 59, 0.663); */
@@ -368,7 +371,7 @@ justify-content: center;
 .portfolio img{
     height: 200px;
     width: 300px;
-    transition: transform .2s ease-in;
+    transition: transform .3s ease-in;
     
 }
 .portfolio img:hover{
@@ -420,8 +423,7 @@ overflow: hidden;
 }
 .contact-element{
     background: white ;
-  
-    transition: transform .2s ease-in;
+    transition: transform .4s ease-in;
     box-shadow: 6px 6px 6px rgba(39, 38, 38, 0.7);
     padding: 30px;
     text-align: center;
@@ -462,7 +464,7 @@ overflow: hidden;
 }
 input[type="text"],
 input[type="email"],
-input[type="number"],
+input[type="tel"],
 input[type="message"],
 textarea{
     width: 100%;
@@ -529,5 +531,10 @@ top: 20px;}
         flex-direction: row;
        overflow:scroll;
       margin: auto;
+      }
+      .skill-box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2em;
       }
     }
